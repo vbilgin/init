@@ -15,7 +15,6 @@ foreach ($file in Get-ChildItem "..\..\General\Fonts" -Recurse -File) {
     $file | ForEach-Object { $fonts.CopyHere($_.fullname) }
   }
 }
-Copy-Item "..\..\General\Fonts\*" "C:\Windows\Fonts\" -Recurse -File
 
 # === Run Chris Titus Tech's Windows Utility ===
 # https://github.com/ChrisTitusTech/winutil
