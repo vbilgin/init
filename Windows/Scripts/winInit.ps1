@@ -11,7 +11,7 @@ foreach ($file in Get-ChildItem "..\..\General\Fonts" -Recurse -File) {
   $fileName = $file.Name
   if (-not(Test-Path -Path "C:\Windows\Fonts\$fileName" )) {
     Write-Host "Installing $fileName"
-    Get-ChildItem $file | ForEach-Object { $fonts.CopyHere($_.fullname) }
+    $file | ForEach-Object { $fonts.CopyHere($_.fullname) }
   }
 }
 Copy-Item "..\..\General\Fonts\*" "C:\Windows\Fonts\" -Recurse -File
