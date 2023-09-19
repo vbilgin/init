@@ -1,8 +1,9 @@
 # === Create local folders ===
-New-Item "C:\Users\%USERNAME%\Apps" -ItemType Directory
-New-Item "C:\Users\%USERNAME%\Dev" -ItemType Directory
-New-Item "C:\Users\%USERNAME%\Dev\git" -ItemType Directory
-New-Item "C:\Users\%USERNAME%\Dev\local" -ItemType Directory
+$userName = [Environment]::UserName
+New-Item "C:\Users\$userName\Apps" -ItemType Directory
+New-Item "C:\Users\$userName\Dev" -ItemType Directory
+New-Item "C:\Users\$userName\Dev\git" -ItemType Directory
+New-Item "C:\Users\$userName\Dev\local" -ItemType Directory
 
 # === Install fonts ===
 # https://blog.simontimms.com/2021/06/11/installing-fonts/
