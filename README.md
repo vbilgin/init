@@ -7,12 +7,7 @@ A collection of files, scripts, and other bits to help me set up a new machine (
 Run the following commands in PowerShell (admin not needed but will be needed for scripts in the repo):
 
 ```powershell
-Set-ExecutionPolicy Bypass
-Invoke-WebRequest 'https://github.com/vbilgin/init/archive/refs/heads/main.zip' -OutFile .\init.zip
-Expand-Archive .\init.zip .\
-Rename-Item .\init-main .\init
-Remove-Item .\init.zip
-
+Set-ExecutionPolicy Bypass; iwr "https://github.com/vbilgin/init/archive/refs/heads/main.zip" -OutFile .\init.zip; Expand-Archive .\init.zip .\; ren .\init-main .\init; rd .\init.zip
 ```
 
 ### Actions Performed
@@ -29,7 +24,7 @@ Remove-Item .\init.zip
   - VS Code
   - VLC
   - Spotify
-  - 7-zip
+  - 7-Zip
   - Google Chrome
   - Firefox
   - Python
