@@ -53,10 +53,6 @@ if (-not $isWin11) {
   winget install "Windows Terminal" --source msstore
 }
 
-
-# === Install WSL ===
-wsl --install
-
 # === Install some apps via .exe ===
 # Tailscale (always pulls latest)
 Invoke-WebRequest -Uri "https://pkgs.tailscale.com/stable/tailscale-setup-latest.exe" -OutFile "$PSScriptRoot\..\Tailscale.exe"
