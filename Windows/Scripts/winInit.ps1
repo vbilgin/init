@@ -47,7 +47,12 @@ if (-not $isWin11) {
 # === Install some apps from MS Store ===
 winget install "Yubico Authenticator" --source msstore
 winget install "Microsoft PowerToys" --source msstore
-winget install "Windows Terminal" --source msstore
+
+# Only install Windows Terminal if not on Win 11
+if (-not $isWin11) {
+  winget install "Windows Terminal" --source msstore
+}
+
 
 # === Install WSL ===
 wsl --install
