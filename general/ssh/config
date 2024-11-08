@@ -1,0 +1,39 @@
+Host al-dns1
+  HostName al-dns1.lan.xvpo.net
+  User root
+
+Host dns1-ve
+  HostName dns1-ve.lan.xvpo.net
+  User root
+
+Host al-robot
+  HostName al-robot.lan.xvpo.net
+  User root
+
+Host al-nas1
+  HostName al-nas1.lan.xvpo.net
+  User root
+
+Host al-rout1
+  HostName rout1.lan.xvpo.net
+  User root
+
+Host al-srv1
+  HostName al-srv1.lan.xvpo.net
+  User root
+
+Host al-proxy
+  HostName al-proxy.lan.xvpo.net
+  User root
+
+Host virt1-ve
+  HostName virt1-ve.lan.xvpo.net
+  User root
+
+Host rout1-ve
+  HostName rout1-ve.lan.xvpo.net
+  User root
+
+Host al-dev
+	HostName al-dev.lan.xvpo.net
+	User vb
